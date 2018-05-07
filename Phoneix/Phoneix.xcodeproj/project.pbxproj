@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		209119AE20A01DF600CE0C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209119AD20A01DF600CE0C78 /* AppDelegate.swift */; };
-		209119B020A01DF600CE0C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209119AF20A01DF600CE0C78 /* ViewController.swift */; };
-		209119B320A01DF600CE0C78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209119B120A01DF600CE0C78 /* Main.storyboard */; };
 		209119B520A01DF700CE0C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209119B420A01DF700CE0C78 /* Assets.xcassets */; };
 		209119B820A01DF700CE0C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209119B620A01DF700CE0C78 /* LaunchScreen.storyboard */; };
 		209119C320A01DF700CE0C78 /* PhoneixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209119C220A01DF700CE0C78 /* PhoneixTests.swift */; };
 		209119CE20A01DF700CE0C78 /* PhoneixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209119CD20A01DF700CE0C78 /* PhoneixUITests.swift */; };
+		209119E320A02EF500CE0C78 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 209119E220A02EF400CE0C78 /* Info.plist */; };
+		2D5F4205172E4819335FAFEF /* Pods_PhoneixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57D9C3281AE9B52446160E4 /* Pods_PhoneixUITests.framework */; };
+		8090E664C0BC5E43C9E0877C /* Pods_PhoneixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */; };
+		A7A0952F3C37CF445BE176EE /* Pods_Phoneix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F5529C157A3A69734E1EC /* Pods_Phoneix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1264E57582D38FB9CAC1606B /* Pods-PhoneixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixUITests/Pods-PhoneixUITests.release.xcconfig"; sourceTree = "<group>"; };
 		209119AA20A01DF600CE0C78 /* Phoneix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phoneix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209119AD20A01DF600CE0C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		209119AF20A01DF600CE0C78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		209119B220A01DF600CE0C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209119B420A01DF700CE0C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209119B720A01DF700CE0C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		209119B920A01DF700CE0C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209119BE20A01DF700CE0C78 /* PhoneixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		209119C220A01DF700CE0C78 /* PhoneixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneixTests.swift; sourceTree = "<group>"; };
 		209119C420A01DF700CE0C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209119C920A01DF700CE0C78 /* PhoneixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		209119CD20A01DF700CE0C78 /* PhoneixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneixUITests.swift; sourceTree = "<group>"; };
 		209119CF20A01DF700CE0C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209119E220A02EF400CE0C78 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32020F1E6EF0767BBBE694B0 /* Pods-Phoneix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phoneix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix.debug.xcconfig"; sourceTree = "<group>"; };
+		50BD63253F4F1E84006AB92F /* Pods-PhoneixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixTests/Pods-PhoneixTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A9F5529C157A3A69734E1EC /* Pods_Phoneix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phoneix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7123D7A5B43EF632C1D8660C /* Pods-PhoneixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixUITests/Pods-PhoneixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		786DF22F94564A1BDCE644AB /* Pods-PhoneixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixTests/Pods-PhoneixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B57D9C3281AE9B52446160E4 /* Pods_PhoneixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F610ABF58AA8705EA0EB83CC /* Pods-Phoneix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phoneix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A0952F3C37CF445BE176EE /* Pods_Phoneix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8090E664C0BC5E43C9E0877C /* Pods_PhoneixTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5F4205172E4819335FAFEF /* Pods_PhoneixUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,8 @@
 				209119C120A01DF700CE0C78 /* PhoneixTests */,
 				209119CC20A01DF700CE0C78 /* PhoneixUITests */,
 				209119AB20A01DF600CE0C78 /* Products */,
+				4CE3296052A9C96E37BC880E /* Pods */,
+				45DAD0BBEAFF71F12991EAAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				209119AD20A01DF600CE0C78 /* AppDelegate.swift */,
-				209119AF20A01DF600CE0C78 /* ViewController.swift */,
-				209119B120A01DF600CE0C78 /* Main.storyboard */,
-				209119B420A01DF700CE0C78 /* Assets.xcassets */,
-				209119B620A01DF700CE0C78 /* LaunchScreen.storyboard */,
-				209119B920A01DF700CE0C78 /* Info.plist */,
+				209119DB20A02ABB00CE0C78 /* Main */,
+				209119DC20A02ACE00CE0C78 /* Home */,
+				209119DD20A02AEC00CE0C78 /* Categories */,
+				209119DE20A02B0200CE0C78 /* Post */,
+				209119DF20A02B0B00CE0C78 /* VIP */,
+				209119E020A02BFC00CE0C78 /* Me */,
+				209119E120A02C9200CE0C78 /* Supporting Files */,
 			);
 			path = Phoneix;
 			sourceTree = "<group>";
@@ -125,6 +141,81 @@
 			path = PhoneixUITests;
 			sourceTree = "<group>";
 		};
+		209119DB20A02ABB00CE0C78 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		209119DC20A02ACE00CE0C78 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		209119DD20A02AEC00CE0C78 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		209119DE20A02B0200CE0C78 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		209119DF20A02B0B00CE0C78 /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		209119E020A02BFC00CE0C78 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		209119E120A02C9200CE0C78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				209119B420A01DF700CE0C78 /* Assets.xcassets */,
+				209119B620A01DF700CE0C78 /* LaunchScreen.storyboard */,
+				209119E220A02EF400CE0C78 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45DAD0BBEAFF71F12991EAAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A9F5529C157A3A69734E1EC /* Pods_Phoneix.framework */,
+				29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */,
+				B57D9C3281AE9B52446160E4 /* Pods_PhoneixUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CE3296052A9C96E37BC880E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32020F1E6EF0767BBBE694B0 /* Pods-Phoneix.debug.xcconfig */,
+				F610ABF58AA8705EA0EB83CC /* Pods-Phoneix.release.xcconfig */,
+				786DF22F94564A1BDCE644AB /* Pods-PhoneixTests.debug.xcconfig */,
+				50BD63253F4F1E84006AB92F /* Pods-PhoneixTests.release.xcconfig */,
+				7123D7A5B43EF632C1D8660C /* Pods-PhoneixUITests.debug.xcconfig */,
+				1264E57582D38FB9CAC1606B /* Pods-PhoneixUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 209119D220A01DF700CE0C78 /* Build configuration list for PBXNativeTarget "Phoneix" */;
 			buildPhases = (
+				EF02AE8DC8ED6525BE69D538 /* [CP] Check Pods Manifest.lock */,
 				209119A620A01DF600CE0C78 /* Sources */,
 				209119A720A01DF600CE0C78 /* Frameworks */,
 				209119A820A01DF600CE0C78 /* Resources */,
+				BF54ACEB07810FAF09E2AF8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 209119D520A01DF700CE0C78 /* Build configuration list for PBXNativeTarget "PhoneixTests" */;
 			buildPhases = (
+				8A97C7A166D55A2BAF1C93A7 /* [CP] Check Pods Manifest.lock */,
 				209119BA20A01DF700CE0C78 /* Sources */,
 				209119BB20A01DF700CE0C78 /* Frameworks */,
 				209119BC20A01DF700CE0C78 /* Resources */,
@@ -167,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 209119D820A01DF700CE0C78 /* Build configuration list for PBXNativeTarget "PhoneixUITests" */;
 			buildPhases = (
+				C74F4606F9B6B1DF15BD36B9 /* [CP] Check Pods Manifest.lock */,
 				209119C520A01DF700CE0C78 /* Sources */,
 				209119C620A01DF700CE0C78 /* Frameworks */,
 				209119C720A01DF700CE0C78 /* Resources */,
@@ -231,7 +326,7 @@
 			files = (
 				209119B820A01DF700CE0C78 /* LaunchScreen.storyboard in Resources */,
 				209119B520A01DF700CE0C78 /* Assets.xcassets in Resources */,
-				209119B320A01DF600CE0C78 /* Main.storyboard in Resources */,
+				209119E320A02EF500CE0C78 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +346,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A97C7A166D55A2BAF1C93A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF54ACEB07810FAF09E2AF8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C74F4606F9B6B1DF15BD36B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF02AE8DC8ED6525BE69D538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Phoneix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		209119A620A01DF600CE0C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209119B020A01DF600CE0C78 /* ViewController.swift in Sources */,
 				209119AE20A01DF600CE0C78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +462,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		209119B120A01DF600CE0C78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				209119B220A01DF600CE0C78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		209119B620A01DF700CE0C78 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,53 +589,48 @@
 		};
 		209119D320A01DF700CE0C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32020F1E6EF0767BBBE694B0 /* Pods-Phoneix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
-				INFOPLIST_FILE = Phoneix/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "Phoneix/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Phoneix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		209119D420A01DF700CE0C78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F610ABF58AA8705EA0EB83CC /* Pods-Phoneix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
-				INFOPLIST_FILE = Phoneix/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				INFOPLIST_FILE = "Phoneix/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Phoneix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		209119D620A01DF700CE0C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786DF22F94564A1BDCE644AB /* Pods-PhoneixTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -485,17 +641,14 @@
 		};
 		209119D720A01DF700CE0C78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BD63253F4F1E84006AB92F /* Pods-PhoneixTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,16 +659,13 @@
 		};
 		209119D920A01DF700CE0C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7123D7A5B43EF632C1D8660C /* Pods-PhoneixUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,16 +676,13 @@
 		};
 		209119DA20A01DF700CE0C78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1264E57582D38FB9CAC1606B /* Pods-PhoneixUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
