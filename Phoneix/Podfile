@@ -8,6 +8,7 @@ target 'Phoneix' do
   # Pods for Phoneix
 
   pod 'Alamofire'
+  pod 'Moya'
 
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
