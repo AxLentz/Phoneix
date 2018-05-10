@@ -1,5 +1,5 @@
 //
-//  VIPViewController.swift
+//  CommunityViewController.swift
 //  Phoneix
 //
 //  Created by Weee! on 2018/5/7.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VIPViewController: MainBaseViewController {
+class CommunityViewController: MainBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

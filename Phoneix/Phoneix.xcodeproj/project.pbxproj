@@ -19,8 +19,10 @@
 		20911A2520A0527600CE0C78 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2420A0527600CE0C78 /* HomeViewController.swift */; };
 		20911A2720A0529400CE0C78 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2620A0529400CE0C78 /* CategoriesViewController.swift */; };
 		20911A2920A052A800CE0C78 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2820A052A700CE0C78 /* PostViewController.swift */; };
-		20911A2B20A052B600CE0C78 /* VIPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2A20A052B600CE0C78 /* VIPViewController.swift */; };
+		20911A2B20A052B600CE0C78 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2A20A052B600CE0C78 /* CommunityViewController.swift */; };
 		20911A2D20A052C000CE0C78 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2C20A052C000CE0C78 /* MeViewController.swift */; };
+		20911A3020A3D91600CE0C78 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2F20A3D91600CE0C78 /* Extensions.swift */; };
+		20911A3420A41E8400CE0C78 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A3320A41E8400CE0C78 /* Design.swift */; };
 		2D5F4205172E4819335FAFEF /* Pods_PhoneixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57D9C3281AE9B52446160E4 /* Pods_PhoneixUITests.framework */; };
 		8090E664C0BC5E43C9E0877C /* Pods_PhoneixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */; };
 		A7A0952F3C37CF445BE176EE /* Pods_Phoneix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F5529C157A3A69734E1EC /* Pods_Phoneix.framework */; };
@@ -62,8 +64,10 @@
 		20911A2420A0527600CE0C78 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		20911A2620A0529400CE0C78 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		20911A2820A052A700CE0C78 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		20911A2A20A052B600CE0C78 /* VIPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPViewController.swift; sourceTree = "<group>"; };
+		20911A2A20A052B600CE0C78 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		20911A2C20A052C000CE0C78 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		20911A2F20A3D91600CE0C78 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		20911A3320A41E8400CE0C78 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32020F1E6EF0767BBBE694B0 /* Pods-Phoneix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phoneix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix.debug.xcconfig"; sourceTree = "<group>"; };
 		50BD63253F4F1E84006AB92F /* Pods-PhoneixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixTests/Pods-PhoneixTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,8 +136,9 @@
 				209119DC20A02ACE00CE0C78 /* Home */,
 				209119DD20A02AEC00CE0C78 /* Categories */,
 				209119DE20A02B0200CE0C78 /* Post */,
-				209119DF20A02B0B00CE0C78 /* VIP */,
+				209119DF20A02B0B00CE0C78 /* Community */,
 				209119E020A02BFC00CE0C78 /* Me */,
+				20911A2E20A3D8F100CE0C78 /* Tools */,
 				209119E120A02C9200CE0C78 /* Supporting Files */,
 			);
 			path = Phoneix;
@@ -191,12 +196,12 @@
 			path = Post;
 			sourceTree = "<group>";
 		};
-		209119DF20A02B0B00CE0C78 /* VIP */ = {
+		209119DF20A02B0B00CE0C78 /* Community */ = {
 			isa = PBXGroup;
 			children = (
-				20911A2A20A052B600CE0C78 /* VIPViewController.swift */,
+				20911A2A20A052B600CE0C78 /* CommunityViewController.swift */,
 			);
-			path = VIP;
+			path = Community;
 			sourceTree = "<group>";
 		};
 		209119E020A02BFC00CE0C78 /* Me */ = {
@@ -215,6 +220,15 @@
 				209119E220A02EF400CE0C78 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20911A2E20A3D8F100CE0C78 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				20911A2F20A3D91600CE0C78 /* Extensions.swift */,
+				20911A3320A41E8400CE0C78 /* Design.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		45DAD0BBEAFF71F12991EAAC /* Frameworks */ = {
@@ -455,10 +469,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20911A2D20A052C000CE0C78 /* MeViewController.swift in Sources */,
-				20911A2B20A052B600CE0C78 /* VIPViewController.swift in Sources */,
+				20911A2B20A052B600CE0C78 /* CommunityViewController.swift in Sources */,
 				20911A2520A0527600CE0C78 /* HomeViewController.swift in Sources */,
+				20911A3420A41E8400CE0C78 /* Design.swift in Sources */,
 				20911A2120A0504500CE0C78 /* MainNavigationController.swift in Sources */,
 				20911A2920A052A800CE0C78 /* PostViewController.swift in Sources */,
+				20911A3020A3D91600CE0C78 /* Extensions.swift in Sources */,
 				20911A2720A0529400CE0C78 /* CategoriesViewController.swift in Sources */,
 				20911A1F20A0500000CE0C78 /* MainTabBarController.swift in Sources */,
 				20911A2320A051E900CE0C78 /* MainBaseViewController.swift in Sources */,
@@ -632,7 +648,10 @@
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = "Phoneix/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Phoneix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -649,7 +668,10 @@
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = "Phoneix/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Phoneix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -666,7 +688,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -684,7 +710,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -701,7 +731,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -718,7 +752,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
