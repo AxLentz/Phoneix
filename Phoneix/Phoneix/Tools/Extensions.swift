@@ -11,7 +11,7 @@ import UIKit
 
 extension Bundle {
     
-    func nameSpace() -> String {
+    var nameSpace: String {
         return Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
     }
 }

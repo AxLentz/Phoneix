@@ -54,7 +54,7 @@ class MainTabBarController: UITabBarController {
         guard let clsName = dict["clsName"] as? String,
             let title = dict["title"] as? String,
             let imgName = dict["imgName"] as? String,
-            let cls = NSClassFromString(Bundle.main.nameSpace() + "." + clsName) as? UIViewController.Type
+            let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type
             else {
                 return UIViewController()
         }

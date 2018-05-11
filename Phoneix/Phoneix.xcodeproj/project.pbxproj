@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204E0DBE20A5481A002F9FC9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E0DBD20A5481A002F9FC9 /* Networking.swift */; };
+		204E0DC020A55E4D002F9FC9 /* MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E0DBF20A55E4D002F9FC9 /* MyService.swift */; };
 		209119AE20A01DF600CE0C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209119AD20A01DF600CE0C78 /* AppDelegate.swift */; };
 		209119B520A01DF700CE0C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209119B420A01DF700CE0C78 /* Assets.xcassets */; };
 		209119B820A01DF700CE0C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209119B620A01DF700CE0C78 /* LaunchScreen.storyboard */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		1264E57582D38FB9CAC1606B /* Pods-PhoneixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixUITests/Pods-PhoneixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		204E0DBD20A5481A002F9FC9 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		204E0DBF20A55E4D002F9FC9 /* MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
 		209119AA20A01DF600CE0C78 /* Phoneix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phoneix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209119AD20A01DF600CE0C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209119B420A01DF700CE0C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 			children = (
 				20911A2F20A3D91600CE0C78 /* Extensions.swift */,
 				20911A3320A41E8400CE0C78 /* Design.swift */,
+				204E0DBD20A5481A002F9FC9 /* Networking.swift */,
+				204E0DBF20A55E4D002F9FC9 /* MyService.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -473,8 +479,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20911A2D20A052C000CE0C78 /* MeViewController.swift in Sources */,
+				204E0DC020A55E4D002F9FC9 /* MyService.swift in Sources */,
 				20911A2B20A052B600CE0C78 /* CommunityViewController.swift in Sources */,
 				20911A2520A0527600CE0C78 /* HomeViewController.swift in Sources */,
+				204E0DBE20A5481A002F9FC9 /* Networking.swift in Sources */,
 				20911A3420A41E8400CE0C78 /* Design.swift in Sources */,
 				20911A2120A0504500CE0C78 /* MainNavigationController.swift in Sources */,
 				20911A2920A052A800CE0C78 /* PostViewController.swift in Sources */,
@@ -652,7 +660,10 @@
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = "Phoneix/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Phoneix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -669,7 +680,10 @@
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = "Phoneix/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Phoneix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -686,7 +700,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -704,7 +722,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -721,7 +743,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -738,7 +764,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PYL96S287W;
 				INFOPLIST_FILE = PhoneixUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.PhoneixUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
