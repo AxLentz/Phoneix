@@ -5,15 +5,25 @@ target 'Phoneix' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Phoneix
+#   Pods for Phoneix
 
   pod 'Alamofire'
-  pod 'Moya'
+  
+#  pod 'Moya'
+
+  pod 'Moya/RxSwift'
   
   pod 'SwiftyJSON', '~> 4.0'
 
   pod 'RxSwift',    '~> 4.0'
+  
   pod 'RxCocoa',    '~> 4.0'
+  
+  pod 'RxDataSources'
+  
+  pod 'Kingfisher', '~> 4.0'
+  
+  
 
   target 'PhoneixTests' do
     inherit! :search_paths

@@ -9,7 +9,6 @@
 import UIKit
 
 struct Color {
-    
     static let yellow = UIColor(argb: 0xFFFFFBC4)
     static let blue = UIColor(argb: 0xFF4BACEB)
     static let gray = UIColor(argb: 0xFFBDBDBD)
@@ -17,3 +16,5 @@ struct Color {
     static let red = UIColor(argb: 0xFFE35E6E)
 }
 
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height

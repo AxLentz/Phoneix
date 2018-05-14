@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2014F50A20A96AC100A26C56 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2014F50920A96AC100A26C56 /* BannerModel.swift */; };
 		204E0DBE20A5481A002F9FC9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E0DBD20A5481A002F9FC9 /* Networking.swift */; };
 		204E0DC020A55E4D002F9FC9 /* MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E0DBF20A55E4D002F9FC9 /* MyService.swift */; };
 		209119AE20A01DF600CE0C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209119AD20A01DF600CE0C78 /* AppDelegate.swift */; };
@@ -25,6 +26,8 @@
 		20911A2D20A052C000CE0C78 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2C20A052C000CE0C78 /* MeViewController.swift */; };
 		20911A3020A3D91600CE0C78 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A2F20A3D91600CE0C78 /* Extensions.swift */; };
 		20911A3420A41E8400CE0C78 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20911A3320A41E8400CE0C78 /* Design.swift */; };
+		20EA1EA520A9660D0024805E /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA1EA420A9660D0024805E /* BannerView.swift */; };
+		20EA1EA720A966370024805E /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA1EA620A966370024805E /* BannerCell.swift */; };
 		2D5F4205172E4819335FAFEF /* Pods_PhoneixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57D9C3281AE9B52446160E4 /* Pods_PhoneixUITests.framework */; };
 		8090E664C0BC5E43C9E0877C /* Pods_PhoneixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */; };
 		A7A0952F3C37CF445BE176EE /* Pods_Phoneix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F5529C157A3A69734E1EC /* Pods_Phoneix.framework */; };
@@ -49,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		1264E57582D38FB9CAC1606B /* Pods-PhoneixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixUITests/Pods-PhoneixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2014F50920A96AC100A26C56 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
 		204E0DBD20A5481A002F9FC9 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		204E0DBF20A55E4D002F9FC9 /* MyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
 		209119AA20A01DF600CE0C78 /* Phoneix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phoneix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +76,8 @@
 		20911A2C20A052C000CE0C78 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		20911A2F20A3D91600CE0C78 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		20911A3320A41E8400CE0C78 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		20EA1EA420A9660D0024805E /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		20EA1EA620A966370024805E /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		29A53FCFE10E2A9F5F327BCE /* Pods_PhoneixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32020F1E6EF0767BBBE694B0 /* Pods-Phoneix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phoneix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix.debug.xcconfig"; sourceTree = "<group>"; };
 		50BD63253F4F1E84006AB92F /* Pods-PhoneixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneixTests/Pods-PhoneixTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				20911A2420A0527600CE0C78 /* HomeViewController.swift */,
+				20EA1EA420A9660D0024805E /* BannerView.swift */,
+				20EA1EA620A966370024805E /* BannerCell.swift */,
+				2014F50920A96AC100A26C56 /* BannerModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -417,18 +426,24 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Phoneix/Pods-Phoneix-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -483,6 +498,7 @@
 				20911A2D20A052C000CE0C78 /* MeViewController.swift in Sources */,
 				204E0DC020A55E4D002F9FC9 /* MyService.swift in Sources */,
 				20911A2B20A052B600CE0C78 /* CommunityViewController.swift in Sources */,
+				2014F50A20A96AC100A26C56 /* BannerModel.swift in Sources */,
 				20911A2520A0527600CE0C78 /* HomeViewController.swift in Sources */,
 				204E0DBE20A5481A002F9FC9 /* Networking.swift in Sources */,
 				20911A3420A41E8400CE0C78 /* Design.swift in Sources */,
@@ -492,7 +508,9 @@
 				20911A2720A0529400CE0C78 /* CategoriesViewController.swift in Sources */,
 				20911A1F20A0500000CE0C78 /* MainTabBarController.swift in Sources */,
 				20911A2320A051E900CE0C78 /* MainBaseViewController.swift in Sources */,
+				20EA1EA520A9660D0024805E /* BannerView.swift in Sources */,
 				209119AE20A01DF600CE0C78 /* AppDelegate.swift in Sources */,
+				20EA1EA720A966370024805E /* BannerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
