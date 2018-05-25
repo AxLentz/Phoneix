@@ -8,12 +8,10 @@ target 'Phoneix' do
 #   Pods for Phoneix
 
   pod 'Alamofire'
-  
-#  pod 'Moya'
 
   pod 'Moya/RxSwift'
   
-  pod 'SwiftyJSON', '~> 4.0'
+  pod 'ObjectMapper'
 
   pod 'RxSwift',    '~> 4.0'
   
@@ -22,6 +20,8 @@ target 'Phoneix' do
   pod 'RxDataSources'
   
   pod 'Kingfisher', '~> 4.0'
+  
+  pod 'SnapKit'
   
   
 

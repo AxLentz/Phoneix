@@ -18,3 +18,6 @@ struct Color {
 
 let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
+let statusBarHeight = UIApplication.shared.statusBarFrame.height
+let navigationBarHeight: CGFloat = 44.0
+let tabBarHeight: CGFloat = 49.0

@@ -7,11 +7,22 @@
 //
 
 import Foundation
-import SwiftyJSON
+import ObjectMapper
 
-struct BannerModel {
+struct BannerModel: Mappable {
     
     var img_url: String?
     
     var detail: String?
+    
+    
+    init?(map: Map) {
+        
+    }
+    
+    mutating func mapping(map: Map) {
+        img_url   <-  map["img_url"]
+        detail    <-  map["detail"]
+    }
+
 }

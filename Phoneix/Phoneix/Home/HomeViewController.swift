@@ -8,32 +8,27 @@
 
 import UIKit
 import Moya
-import SwiftyJSON
+
 
 class HomeViewController: MainBaseViewController {
     
-    lazy var bannerView = BannerView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 230))
+    lazy var bannerView: BannerView = {
+        let view = BannerView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        view.backgroundColor = .red
+        view.bannerDelegate = self
+        return view
+    }()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let btn = UIButton(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
-//        btn.backgroundColor = .red
-//        view.addSubview(btn)
-//        btn.rx.tap.subscribe(onNext: { (_) in
-//            print("hello")
-//        }, onError: nil, onCompleted: nil) {
-//            print("world")
-//        }
-        
-//        let a = btn.rx.tap.subscribe { (_) in
-//            print("hello")
-//        }
-        
+    
         view.addSubview(bannerView)
-        bannerView.bannerDelegate = self
-
+        bannerView.snp.makeConstraints { (make) in
+            make.top.equalTo(statusBarHeight + navigationBarHeight)
+            make.left.right.equalTo(view)
+            make.height.equalTo(screenWidth / 1.875)
+        }
     }
 
     
@@ -45,20 +40,19 @@ class HomeViewController: MainBaseViewController {
     
     func loadBanner() {
         let provider = MoyaProvider<MyService>()
-//        provider.request(.banner(zipcode: "95008")) { (result) in
-//            switch result {
-//            case let .success(moyaResponse):
-//                let data = moyaResponse.data
-//                let json = JSON(data)
-//                print(json)
-//
-//
-//                let statusCode = moyaResponse.statusCode
-//                print(statusCode)
-//            case let .failure(error):
-//                print(error)
-//            }
-//        }
+        provider.request(.banner(zipcode: "95008")) { (result) in
+            switch result {
+            case let .success(moyaResponse):
+                let data = moyaResponse.data
+      
+                
+
+                let statusCode = moyaResponse.statusCode
+                print(statusCode)
+            case let .failure(error):
+                print(error)
+            }
+        }
         
         
     }
