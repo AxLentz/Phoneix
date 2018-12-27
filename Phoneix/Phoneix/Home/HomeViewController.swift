@@ -42,18 +42,14 @@ class HomeViewController: MainBaseViewController {
         let provider = MoyaProvider<MyService>()
         provider.request(.banner(zipcode: "95008")) { (result) in
             switch result {
-            case let .success(moyaResponse):
-                let data = moyaResponse.data
-      
-                
-
-                let statusCode = moyaResponse.statusCode
-                print(statusCode)
+            case let .success(response):
+                if let data = try? response.mapJSON() as? BannerModel {
+                    
+                }
             case let .failure(error):
                 print(error)
             }
         }
-        
         
     }
     

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Phoneix
+
 
 class PhoneixTests: XCTestCase {
     

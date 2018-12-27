@@ -65,9 +65,8 @@ class MainTabBarController: UITabBarController {
         
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imgName)
         vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imgName + "_selected")?.withRenderingMode(.alwaysOriginal)
-        
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: Color.blue], for: .selected)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12)], for: UIControlState.normal)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: Color.blue], for: .selected)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: UIControl.State.normal)
         
         let nav = MainNavigationController(rootViewController: vc)
         
