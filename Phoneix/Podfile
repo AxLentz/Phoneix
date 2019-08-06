@@ -23,6 +23,7 @@ target 'Phoneix' do
   
   pod 'SnapKit'
   
+  pod 'Stripe'
   
 
   target 'PhoneixTests' do

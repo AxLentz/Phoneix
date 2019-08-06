@@ -28,15 +28,15 @@ class PostViewController: MainBaseViewController {
         if !PKPaymentAuthorizationViewController.canMakePayments() {
             print("当前设备不支付Apple Pay")
         }
-        else if PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: [.amex, .masterCard, .visa, .chinaUnionPay]) {
-            print("Wallet没有添加该支付网络的储蓄卡/信用卡")
-            let paymentButton = PKPaymentButton(paymentButtonType: .setUp, paymentButtonStyle: .whiteOutline)
-            paymentButton.addTarget(self, action: #selector(jump), for: .touchUpInside)
-            view.addSubview(paymentButton)
-            paymentButton.frame = CGRect(x: 100, y: 200, width: 50, height: 20)
-        }
+//        else if PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: [.amex, .masterCard, .visa, .chinaUnionPay]) {
+//            print("Wallet没有添加该支付网络的储蓄卡/信用卡")
+//            let paymentButton = PKPaymentButton(paymentButtonType: .setUp, paymentButtonStyle: .whiteOutline)
+//            paymentButton.addTarget(self, action: #selector(jump), for: .touchUpInside)
+//            view.addSubview(paymentButton)
+//            paymentButton.frame = CGRect(x: 100, y: 200, width: 50, height: 20)
+//        }
         else {
-            let paymentButton = PKPaymentButton(paymentButtonType: .setUp, paymentButtonStyle: .black)
+            let paymentButton = PKPaymentButton(paymentButtonType: .setUp, paymentButtonStyle: .white)
             paymentButton.addTarget(self, action: #selector(buy), for: .touchUpInside)
             view.addSubview(paymentButton)
             paymentButton.frame = CGRect(x: 100, y: 200, width: 50, height: 20)
@@ -57,7 +57,7 @@ class PostViewController: MainBaseViewController {
         request.merchantIdentifier = "merchant.com.sayweee.testPay"
         request.countryCode = "CN"
         request.currencyCode = "CNY"
-        request.supportedNetworks = [.amex, .masterCard, .visa]
+        request.supportedNetworks = [.amex, .masterCard, .visa, .chinaUnionPay]
         request.merchantCapabilities = [.capability3DS, .capabilityEMV, .capabilityCredit, .capabilityDebit]
         
         let price1 = NSDecimalNumber(mantissa: 10, exponent: -2, isNegative: true)
@@ -81,10 +81,10 @@ class PostViewController: MainBaseViewController {
         method1.detail = "24小时送到"
         method1.identifier = "顺丰"
         
-        let priceFast2 = NSDecimalNumber(string: "12.0")
-        let method2 = PKShippingMethod(label: "韵达快递", amount: priceFast2)
-        method2.detail = "送货上门"
-        method2.identifier = "韵达"
+        let priceFast2 = NSDecimalNumber(string: "0.0")
+        let method2 = PKShippingMethod(label: "自提", amount: priceFast2)
+        method2.detail = "上门自提"
+        method2.identifier = "自提"
         
         request.shippingMethods = [method1, method2]
         request.shippingType = .storePickup
@@ -104,6 +104,8 @@ class PostViewController: MainBaseViewController {
         address.state = "GA"
         address.postalCode = "30303"
         contact.postalAddress = address
+        contact.phoneNumber = CNPhoneNumber(stringValue: "123345678")
+        contact.emailAddress = "qwe@w.com"
 
         request.shippingContact = contact
         
