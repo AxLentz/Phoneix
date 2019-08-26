@@ -55,9 +55,9 @@ class PostViewController: MainBaseViewController {
         
         let request = PKPaymentRequest()
         request.merchantIdentifier = "merchant.com.sayweee.testPay"
-        request.countryCode = "CN"
-        request.currencyCode = "CNY"
-        request.supportedNetworks = [.amex, .masterCard, .visa, .chinaUnionPay]
+        request.countryCode = "US"
+        request.currencyCode = "USD"
+        request.supportedNetworks = [.amex, .masterCard, .visa]
         request.merchantCapabilities = [.capability3DS, .capabilityEMV, .capabilityCredit, .capabilityDebit]
         
         let price1 = NSDecimalNumber(mantissa: 10, exponent: -2, isNegative: true)
